@@ -1,9 +1,9 @@
 {
-  description = "nix flake for apple-emoji-gtk";
+  description = "nix flake for apple-color-emoji font";
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
     apple_color_emoji_font = {
-      url = "https://github.com/samuelngs/apple-emoji-linux/releases/latest/download/AppleColorEmoji.ttf";
+      url = "https://github.com/samuelngs/apple-emoji-ttf/releases/latest/download/AppleColorEmoji-Linux.ttf";
       flake = false;
     };
   };
@@ -20,5 +20,7 @@
     overlays.default = final: prev: {
       apple-emoji-nix = self.packages.x86_64-linux.default;
     };
+
+    nixosModules.default = import ./module.nix;
   };
 }

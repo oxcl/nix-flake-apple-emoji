@@ -8,6 +8,6 @@
   '';
   meta = with lib; {
     description = "Apple Emoji font for linux";
-    homepage = "https://github.com/samuelngs/apple-emoji-linux";
+    homepage = "https://github.com/samuelngs/apple-emoji-ttf";
   };
 }
