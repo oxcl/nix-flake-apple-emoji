@@ -16,39 +16,9 @@ Add the flake as an input in your `flake.nix`:
 }
 ```
 
-Then add the NixOS module in your configuration, OR add the overlay and configure the fonts:
-
-```nix
-{
-  inputs,
-  pkgs,
-  ...
-}:
-{
-  # Option 1: Use the NixOS module (recommended)
-  imports = [ inputs.apple-emoji-nix.nixosModules.default ];
-
-  # Option 2: Use the overlay directly by adding it to your nixpkgs (probably in flake.nix)
-  #   pkgs = import nixpkgs {
-  #     system = "x86_64-linux";
-  #     overlays = [ inputs.apple-emoji-nix.overlays.default ];
-  #   };
-  # then add this to your home-manager config at home.nix
-  #   fonts.packages = [ pkgs.apple-emoji-nix ];
-}
-```
-
 ## Installing with NixOS
 
-Add the NixOS module:
-
-```nix
-{
-  imports = [ inputs.apple-emoji-nix.nixosModules.default ];
-}
-```
-
-OR add the overlay and configure fonts manually:
+Add the overlay and configure fonts:
 
 ```nix
 {

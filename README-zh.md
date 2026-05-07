@@ -14,38 +14,9 @@
 }
 ```
 
-然后在您的配置中添加 NixOS 模块，或者添加 overlay 并手动配置字体：
-
-```nix
-{
-  inputs,
-  pkgs,
-  ...
-}:
-{
-  # 方法 1：使用 NixOS 模块（推荐）
-  imports = [ inputs.apple-emoji-nix.nixosModules.default ];
-
-  # 方法 2：直接使用 overlay
-  #   pkgs = import nixpkgs {
-  #     system = "x86_64-linux";
-  #     overlays = [ inputs.apple-emoji-nix.overlays.default ];
-  #   };
-  #   fonts.packages = [ pkgs.apple-emoji-nix ];
-}
-```
-
 ## 在 NixOS 上安装
 
-添加 NixOS 模块：
-
-```nix
-{
-  imports = [ inputs.apple-emoji-nix.nixosModules.default ];
-}
-```
-
-或者添加 overlay 并手动配置字体：
+添加 overlay 并配置字体：
 
 ```nix
 {

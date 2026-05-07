@@ -1,17 +1,5 @@
 {
   "nodes": {
-    "apple_color_emoji_font": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-UGB1bnf7SQA4C2zJvH1hwCky+396y3BeHJGElc5mSvs=",
-        "type": "file",
-        "url": "https://github.com/samuelngs/apple-emoji-ttf/releases/latest/download/AppleColorEmoji-Linux.ttf"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/samuelngs/apple-emoji-ttf/releases/latest/download/AppleColorEmoji-Linux.ttf"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1777954456,
@@ -30,7 +18,6 @@
     },
     "root": {
       "inputs": {
-        "apple_color_emoji_font": "apple_color_emoji_font",
         "nixpkgs": "nixpkgs"
       }
     }
