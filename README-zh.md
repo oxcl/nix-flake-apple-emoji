@@ -8,7 +8,7 @@
 
 ```nix
 {
-  inputs.apple-emoji-nix.url = "github:samuelngs/apple-emoji-nix";
+  inputs.apple-emoji-nix.url = "https://github.com/oxcl/nix-flake-apple-emoji";
 }
 ```
 
