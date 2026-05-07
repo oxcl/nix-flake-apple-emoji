@@ -8,7 +8,7 @@
 
 ```nix
 {
-  inputs.nixpkgs.url = "github:nixos/nixpkgs";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
   inputs.apple-emoji-nix.url = "https://github.com/oxcl/nix-flake-apple-emoji";
   inputs.apple-emoji-nix.inputs.nixpkgs.follows = "nixpkgs";
 }
