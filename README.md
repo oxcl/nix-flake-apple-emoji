@@ -10,6 +10,7 @@ Add the flake as an input in your `flake.nix`:
 
 ```nix
 {
+  inputs.nixpkgs.url = "github:nixos/nixpkgs";
   inputs.apple-emoji-nix.url = "https://github.com/oxcl/nix-flake-apple-emoji";
 }
 ```
