@@ -21,11 +21,12 @@ Add the flake as an input in your `flake.nix`:
 Add the overlay and configure fonts:
 
 ```nix
-{
+let
   pkgs = import nixpkgs {
     system = "x86_64-linux";
     overlays = [ inputs.apple-emoji-nix.overlays.default ];
   };
+in {
   fonts.packages = [ pkgs.apple-emoji-nix ];
 }
 ```
